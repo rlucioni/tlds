@@ -1,3 +1,5 @@
+from pprint import pprint
+
 from bs4 import BeautifulSoup
 import requests
 
@@ -35,3 +37,6 @@ def get_clever_tlds():
                         clever_tlds[tld].append(word)
 
     return clever_tlds
+
+if __name__ == '__main__':
+    pprint(get_clever_tlds())
